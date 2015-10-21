@@ -1,0 +1,8 @@
+{
+  "token": "get this from https://github.com/settings/tokens",
+  "repos": [
+    "example_repo_one",
+    "org_name/private_repo_example"
+  ],
+  "output": "/path/to/file.csv"
+}
