@@ -12,3 +12,7 @@ A script to read pull request statistics from the GitHub API, and write them to 
   1. `output`: path you want the output written to
 1. `./pull_requests.py`
 1. Results are in the filename you specified
+
+## Options
+
+`all` - load all available data instead of just a single page
