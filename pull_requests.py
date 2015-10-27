@@ -14,11 +14,11 @@ apiRoot = 'https://api.github.com/repos/'
 output = csv.writer(open(config['output'], 'wb'))
 output.writerow(['Repo', 'ID', 'Description', 'Created By', 'Open Date', 'Merged By', 'Merged Date', 'Comments'])
 
-pulls = []
-
 for repo in config['repos']:
     all = apiRoot + repo + '/pulls?state=all'
     individual = apiRoot + repo + '/pulls/'
+
+    pulls = []
 
     request = requests.request('GET', all, headers=headers)
     parsed = request.json()
